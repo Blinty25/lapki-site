@@ -41,3 +41,15 @@
   document.getElementById('confirmModal')?.addEventListener('click', close);
   modal?.addEventListener('click', event => { if (event.target === modal) close(); });
 })();
+
+if ('IntersectionObserver' in window && matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  const headings = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        headings.unobserve(entry.target);
+      }
+    }
+  }, { threshold: 0.25 });
+  document.querySelectorAll('.section h2').forEach(heading => headings.observe(heading));
+}

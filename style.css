@@ -172,3 +172,49 @@
 @media(max-width:359px){.brand-lines strong{font-size:20px}.header-actions .btn-small{padding:9px 10px;font-size:9px}.header-inner{gap:6px}.site-header .container{width:calc(100% - 24px)}.team-card{grid-template-columns:39% minmax(0,1fr)}.team-copy{padding:11px}.team-copy h3{font-size:17px}}
 /* Exact same left edge for section eyebrow and headline */
 .services-heading .eyebrow{margin-left:0!important}
+
+/* Shared spacing and motion for salon templates. */
+:root {
+  --section-space: clamp(32px, 4.2vw, 56px);
+  --motion-ease: cubic-bezier(.22, 1, .36, 1);
+}
+.section { padding-block: var(--section-space); }
+.price-guide-section, .faq-section { padding-top: 12px; }
+.booking-steps-section { padding-block: calc(var(--section-space) * .75); }
+.section-intro { margin-bottom: clamp(18px, 2vw, 27px); }
+
+.benefit-card, .benefit-card:nth-child(n+4) { min-height: 0; }
+.benefit-copy { flex: 1 0 auto; }
+.benefit-image { flex-shrink: 0; }
+.nav { font-size: 15px; gap: clamp(12px, 1.4vw, 20px); }
+.nav a { position: relative; }
+.nav a::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 -4px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .28s var(--motion-ease);
+}
+.nav a:is(:hover, :focus-visible)::after { transform: scaleX(1); }
+.hero-highlights { max-width: 690px; }
+.highlight-item strong { font-size: 15px; line-height: 1.25; }
+.highlight-item small { font-size: 13px; line-height: 1.35; }
+
+@media (max-width: 900px) {
+  .nav { font-size: 17px; gap: 16px; }
+}
+@media (max-width: 600px) {
+  .highlight-item strong { font-size: 12px; white-space: normal; }
+  .highlight-item small { font-size: 11px; }
+  .benefit-card:last-child .benefit-image { min-height: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .section h2.in-view { animation: heading-arrival .65s var(--motion-ease) both; }
+  @keyframes heading-arrival {
+    from { opacity: .45; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
