@@ -44,3 +44,48 @@
     rgba(190,201,181,.52) 68%,
     rgba(190,201,181,.01) 95%); }
 }
+
+/* V3: visual legibility and commercially viable template layout */
+.hero-trust-note{font-size:13px;line-height:1.55;max-width:445px;margin:0 0 22px;font-weight:700;color:#62513d}
+.service-body{display:flex;flex-direction:column;flex:1;padding:20px 19px 17px}
+.service-body h3{font-size:clamp(18px,1.45vw,23px);line-height:1.23;min-height:0}
+.service-body p{font-size:14px;line-height:1.62;min-height:0;margin:10px 0 19px}
+.service-bottom{margin-top:auto}
+.service-bottom strong{font-size:15px}
+.service-photo{height:210px}
+.promo-card-copy{max-width:100%;padding:22px}
+.promo-card h3{font-size:clamp(21px,2vw,29px);line-height:1.26;max-width:340px;text-wrap:balance}
+.promo-card::after{background:linear-gradient(180deg,#c0ccb9 0%,rgba(192,204,185,.98) 30%,rgba(192,204,185,.88) 50%,rgba(192,204,185,.04) 90%)}
+.price-guide-section{padding-top:22px;padding-bottom:73px}
+.price-guide-inner{background:#ede7db;border-radius:26px;padding:37px 43px;display:grid;grid-template-columns:.82fr 1.3fr;gap:44px;align-items:center}
+.price-guide-inner h2{font-size:clamp(27px,3vw,39px);margin:10px 0 12px}
+.price-guide-inner p:not(.eyebrow){font-size:14px;color:#6b5d53;line-height:1.75}
+.price-guide-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.price-guide-steps>div{padding:20px 14px;background:#fffaf4;border-radius:15px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.price-guide-steps span{color:var(--accent);font-family:var(--serif);font-size:25px}
+.price-guide-steps strong{font-size:13px;line-height:1.45}
+.price-guide-steps small{font-size:12px;line-height:1.5;color:#71675e}
+.team-section{background:#f2efe8}
+.team-header{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:32px}
+.team-header>div{max-width:690px}.team-header h2{margin:10px 0 14px}.team-header p:not(.eyebrow){font-size:14px;line-height:1.7;color:#71675e}
+.text-link{font-size:13px;font-weight:700;color:var(--accent);white-space:nowrap;padding-bottom:5px}
+.team-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.team-card{background:#fffaf4;display:grid;grid-template-columns:42% 1fr;overflow:hidden;border-radius:21px;min-height:255px;border:1px solid #e8ded0}
+.team-visual{position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:25px;background:#d4d4bf;color:#414937;min-height:255px}
+.team-visual-two{background:#e8cbb8;color:#754e3d}
+.team-visual span{font-family:var(--serif);font-size:24px;opacity:.65}
+.team-visual div{font-family:var(--serif);font-size:clamp(23px,2.4vw,36px);line-height:1.28}
+.team-copy{padding:24px 22px;display:flex;flex-direction:column;justify-content:center;gap:11px}
+.team-copy h3{font-size:21px;line-height:1.3}.team-copy p{font-size:13px;line-height:1.65;color:#6e665f}
+.booking-steps-section{background:#e9e2d6;padding:47px 0}
+.booking-steps-inner{display:grid;grid-template-columns:1fr 1.6fr auto;align-items:center;gap:25px}
+.booking-steps-inner h2{font-size:clamp(25px,2.5vw,34px);margin-top:8px}
+.booking-steps-inner ol{display:flex;padding:0;gap:16px;list-style:none;counter-reset:steps}
+.booking-steps-inner li{flex:1;counter-increment:steps;display:flex;flex-direction:column;gap:6px;border-left:2px solid #c4ae9c;padding-left:12px}
+.booking-steps-inner li::before{content:'0' counter(steps);font-size:12px;font-weight:800;color:var(--accent)}
+.booking-steps-inner li strong{font-size:12px;line-height:1.4}.booking-steps-inner li span{font-size:11px;line-height:1.5;color:#706258}
+.booking-demo-label{display:block;text-align:left;margin:12px 0 8px;font-size:12px;font-weight:800}
+.booking-demo-select{width:100%;padding:13px 14px;background:#fff;border:1px solid #d5c9bb;border-radius:12px;font:inherit;color:#3e352e}
+.booking-demo-note{font-size:12px;line-height:1.55;text-align:left;margin:13px 0 19px;background:#f0e9dc;border-radius:12px;padding:12px;color:#64574c}
+@media(max-width:1050px){.booking-steps-inner{grid-template-columns:1fr}.booking-steps-inner .btn{justify-self:start}.price-guide-inner{grid-template-columns:1fr}.team-card{grid-template-columns:36% 1fr}}
+@media(max-width:600px){.hero-trust-note{font-size:11px;max-width:310px;margin-bottom:12px}.service-photo{height:147px}.service-body{padding:13px 12px 12px}.service-body h3{font-size:16px;line-height:1.3;min-height:0}.service-body p{font-size:12px;line-height:1.55;min-height:0;margin:8px 0 14px}.service-bottom strong{font-size:12px}.service-card{min-height:0}.promo-card h3{font-size:21px;line-height:1.27}.promo-card-copy{padding:15px}.promo-card::after{background:linear-gradient(180deg,#c0ccb9 0%,rgba(192,204,185,.99) 34%,rgba(192,204,185,.84) 57%,rgba(192,204,185,.02) 100%)}.price-guide-section{padding:0 0 52px}.price-guide-inner{padding:24px 18px;gap:20px;border-radius:19px}.price-guide-steps{grid-template-columns:1fr;gap:8px}.price-guide-steps>div{padding:12px 14px;display:grid;grid-template-columns:32px 1fr;gap:2px 10px}.price-guide-steps span{grid-row:span 2;font-size:19px}.price-guide-steps strong{font-size:13px}.price-guide-steps small{font-size:11px}.team-header{display:block;margin-bottom:20px}.team-header p:not(.eyebrow){font-size:12px}.team-header .text-link{display:inline-block;margin-top:16px}.team-grid{grid-template-columns:1fr;gap:12px}.team-card{grid-template-columns:35% 1fr;min-height:195px}.team-visual{min-height:195px;padding:14px}.team-visual div{font-size:23px}.team-copy{padding:15px 12px;gap:7px}.team-copy h3{font-size:17px}.team-copy p{font-size:11px}.team-copy .sample-tag{font-size:8px}.booking-steps-section{padding:33px 0}.booking-steps-inner ol{flex-direction:column;gap:13px}.booking-steps-inner li{padding-left:14px}.booking-steps-inner .btn{width:100%}}
