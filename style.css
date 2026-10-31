@@ -132,10 +132,10 @@
 .booking-steps-cta{min-width:205px;min-height:54px;line-height:1.25;flex-shrink:0;padding:15px 22px;font-size:13px;white-space:nowrap;justify-self:end;gap:10px;letter-spacing:0;box-sizing:border-box}
 .booking-steps-cta span{display:inline-block;line-height:1.35}
 .booking-steps-cta svg{width:19px;height:19px}
-.reviews-rating{padding:16px 22px;border-radius:18px;background:rgba(255,255,255,.8);display:flex;flex-direction:column;gap:5px;align-items:flex-start}
-.reviews-rating strong{font-family:var(--serif);font-size:27px;font-weight:500;white-space:nowrap}
-.reviews-rating strong span{font-family:Arial,sans-serif;letter-spacing:1px;color:#d68d34;font-size:17px;vertical-align:4px}
-.reviews-rating small{font-size:10px;color:#776c5e}
+
+
+
+
 .review-card{padding:24px 25px;min-height:225px;display:flex;flex-direction:column;gap:12px}
 .review-author h3{font-size:14px;margin-bottom:4px}
 .review-author>span{font-size:11px;color:#857c71}
@@ -160,7 +160,7 @@
   .team-experience{font-size:11px!important}
   .team-speciality{font-size:10px;line-height:1.4}
   .booking-steps-cta{min-width:0;width:100%;min-height:50px;justify-self:stretch;font-size:13px;padding:14px 20px}
-  .reviews-rating{display:none}
+  
   .review-card{min-height:0;gap:10px;padding:20px}
   .review-card p{font-size:12px;line-height:1.55}
   .promo-card::after{background:linear-gradient(180deg,#c4d1c2 0%,rgba(196,209,194,.96) 32%,rgba(196,209,194,.80) 58%,transparent 100%)}
